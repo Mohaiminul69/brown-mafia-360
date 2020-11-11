@@ -533,6 +533,10 @@ body {
   background: url("pexels-photo-3617502.jpeg");
 }
 
+#article .container {
+  opacity: 0.7;
+}
+
 #article .page-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
