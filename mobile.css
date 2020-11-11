@@ -2,7 +2,11 @@
   display: flex;
   flex-direction: column;
 }
-#main-nav .social,
+
+#main-nav .social {
+  display: none;
+}
+
 #main-nav ul {
   margin-bottom: 1.5rem;
 }
