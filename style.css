@@ -596,6 +596,7 @@ body {
   background: #333;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 #main-footer .footer-container > *:last-child img {
   width: 40px;
