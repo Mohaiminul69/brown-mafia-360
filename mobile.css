@@ -87,6 +87,7 @@
 
   #home-articles .article-container > *:first-child,
   #home-articles .article-container > *:last-child {
+    grid-template-columns: 1fr;
     grid-column: 1;
   }
 
