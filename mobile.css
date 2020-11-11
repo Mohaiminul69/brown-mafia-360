@@ -109,6 +109,10 @@
   .page-container > *:first-child {
     grid-row: 1;
   }
+  
+  #article .meta {
+    flex-direction: column;
+  }
 
   .l-heading {
     font-size: 2rem;
