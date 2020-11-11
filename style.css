@@ -615,7 +615,13 @@ body {
 }
 
 #main-footer .footer-container input[type="submit"] {
+  background: var(--secondary-color);
+  border-radius: 5px;
   width: 90%;
+}
+
+#main-footer .footer-container input[type="submit"]:hover {
+  background: var(--primary-color);
 }
 
 #last-footer img {
