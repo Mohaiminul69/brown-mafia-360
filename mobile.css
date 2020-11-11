@@ -16,6 +16,10 @@
   margin-right: 40px;
 }
 
+#main-nav .logo img {
+  width: 70px;
+}
+
 #showcase {
   height: 400px;
 }
