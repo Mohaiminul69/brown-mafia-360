@@ -55,3 +55,44 @@ $(window).on("scroll", function () {
     $("#main-nav .container").removeClass("black");
   }
 });
+
+
+// Slide 2
+
+let slideIndex1 = 0;
+showDivs1(slideIndex1);
+
+function plusDivs(n) {
+  showDivs1((slideIndex1 += n));
+}
+
+function showDivs1(n) {
+  let i;
+  let x = document.getElementsByClassName("phone");
+  if (n > x.length) {
+    slideIndex1 = 1;
+  }
+  if (n < 1) {
+    slideIndex1 = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex1 - 1].style.display = "block";
+}
+carousel1();
+
+function carousel1() {
+  let i;
+  let x = document.getElementsByClassName("phone");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex1++;
+  if (slideIndex1 > x.length) {
+    slideIndex1 = 1;
+  }
+  x[slideIndex1 - 1].style.display = "block";
+  setTimeout(carousel1, 7000);
+}
+
