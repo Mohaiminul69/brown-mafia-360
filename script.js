@@ -96,3 +96,42 @@ function carousel1() {
   setTimeout(carousel1, 5000);
 }
 
+
+// Slide 3
+
+let slideIndex2 = 0;
+showDivs2(slideIndex2);
+
+function plusDivs(n) {
+  showDivs2((slideIndex2 += n));
+}
+
+function showDivs2(n) {
+  let i;
+  let x = document.getElementsByClassName("cars");
+  if (n > x.length) {
+    slideIndex2 = 1;
+  }
+  if (n < 1) {
+    slideIndex2 = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex2 - 1].style.display = "block";
+}
+carousel2();
+
+function carousel2() {
+  let i;
+  let x = document.getElementsByClassName("cars");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex2++;
+  if (slideIndex2 > x.length) {
+    slideIndex2 = 1;
+  }
+  x[slideIndex2 - 1].style.display = "block";
+  setTimeout(carousel2, 5000);
+}
