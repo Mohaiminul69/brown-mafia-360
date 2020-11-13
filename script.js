@@ -93,6 +93,6 @@ function carousel1() {
     slideIndex1 = 1;
   }
   x[slideIndex1 - 1].style.display = "block";
-  setTimeout(carousel1, 7000);
+  setTimeout(carousel1, 5000);
 }
 
