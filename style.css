@@ -93,6 +93,13 @@ body {
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
+.border {
+  background: var(--primary-color);
+  height: 6px;
+  border-bottom: 2px solid #444;
+  border-top: 2px solid #444;
+}
+
 .bg-dark {
   background: var(--dark-color);
   color: #fff;
