@@ -56,59 +56,16 @@ $(window).on("scroll", function () {
   }
 });
 
-
 // Slide 2
 
-let slideIndex1 = 0;
-showDivs1(slideIndex1);
-
-function plusDivs(n) {
-  showDivs1((slideIndex1 += n));
-}
-
-function showDivs1(n) {
-  let i;
-  let x = document.getElementsByClassName("phone");
-  if (n > x.length) {
-    slideIndex1 = 1;
-  }
-  if (n < 1) {
-    slideIndex1 = x.length;
-  }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex1 - 1].style.display = "block";
-}
-carousel1();
-
-function carousel1() {
-  let i;
-  let x = document.getElementsByClassName("phone");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  slideIndex1++;
-  if (slideIndex1 > x.length) {
-    slideIndex1 = 1;
-  }
-  x[slideIndex1 - 1].style.display = "block";
-  setTimeout(carousel1, 5000);
-}
-
-
-// Slide 3
+//slide 2
 
 let slideIndex2 = 0;
 showDivs2(slideIndex2);
 
-function plusDivs(n) {
-  showDivs2((slideIndex2 += n));
-}
-
 function showDivs2(n) {
   let i;
-  let x = document.getElementsByClassName("cars");
+  let x = document.getElementsByClassName("phone");
   if (n > x.length) {
     slideIndex2 = 1;
   }
@@ -124,7 +81,7 @@ carousel2();
 
 function carousel2() {
   let i;
-  let x = document.getElementsByClassName("cars");
+  let x = document.getElementsByClassName("phone");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
@@ -134,4 +91,39 @@ function carousel2() {
   }
   x[slideIndex2 - 1].style.display = "block";
   setTimeout(carousel2, 5000);
+}
+
+// slide 3
+
+let slideIndex3 = 0;
+showDivs2(slideIndex3);
+
+function showDivs3(n) {
+  let i;
+  let x = document.getElementsByClassName("cars");
+  if (n > x.length) {
+    slideIndex3 = 1;
+  }
+  if (n < 1) {
+    slideIndex3 = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex3 - 1].style.display = "block";
+}
+carousel3();
+
+function carousel3() {
+  let i;
+  let x = document.getElementsByClassName("cars");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex3++;
+  if (slideIndex3 > x.length) {
+    slideIndex3 = 1;
+  }
+  x[slideIndex3 - 1].style.display = "block";
+  setTimeout(carousel3, 5000);
 }
