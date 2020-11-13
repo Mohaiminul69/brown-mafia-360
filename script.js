@@ -47,3 +47,11 @@ $(".btn").on("click", function (event) {
     );
   }
 });
+
+$(window).on("scroll", function () {
+  if ($(window).scrollTop()) {
+    $("#main-nav .container").addClass("black");
+  } else {
+    $("#main-nav .container").removeClass("black");
+  }
+});
