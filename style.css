@@ -161,6 +161,12 @@ body {
   grid-template-columns: 6fr 3fr 3fr;
   padding: 1rem;
   align-items: center;
+  transition: 0.5s;
+}
+
+#main-nav .container.black {
+  padding: 0 1rem;
+  transition: 0.7s;
 }
 
 #main-nav ul {
