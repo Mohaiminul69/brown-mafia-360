@@ -10,15 +10,31 @@ for (var i = 0; themeDots.length > i; i++) {
 function setTheme(mode) {
   if (mode == "style") {
     document.getElementById("theme-style").href = "style.css";
+    document.getElementById("dark-mode").style.borderColor = "#f3f3f3";
+    document.getElementById("red-mode").style.borderColor = "#333";
+    document.getElementById("green-mode").style.borderColor = "#333";
+    document.getElementById("blue-mode").style.borderColor = "#333";
   }
   if (mode == "red") {
     document.getElementById("theme-style").href = "red.css";
+    document.getElementById("dark-mode").style.borderColor = "#333";
+    document.getElementById("red-mode").style.borderColor = "#f3f3f3";
+    document.getElementById("green-mode").style.borderColor = "#333";
+    document.getElementById("blue-mode").style.borderColor = "#333";
   }
   if (mode == "green") {
     document.getElementById("theme-style").href = "green.css";
+    document.getElementById("dark-mode").style.borderColor = "#333";
+    document.getElementById("red-mode").style.borderColor = "#333";
+    document.getElementById("green-mode").style.borderColor = "#f3f3f3";
+    document.getElementById("blue-mode").style.borderColor = "#333";
   }
   if (mode == "blue") {
     document.getElementById("theme-style").href = "blue.css";
+    document.getElementById("dark-mode").style.borderColor = "#333";
+    document.getElementById("red-mode").style.borderColor = "#333";
+    document.getElementById("green-mode").style.borderColor = "#333";
+    document.getElementById("blue-mode").style.borderColor = "#f3f3f3";
   }
 }
 
