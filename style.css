@@ -639,7 +639,7 @@ body {
 }
 
 #main-footer {
-  background: var(--light-dark-color);
+  background: var(--dark-color);
   color: #fff;
 }
 
@@ -661,7 +661,7 @@ body {
   padding: 0.5rem;
   text-align: center;
   font-size: 1rem;
-  background: var(--dark-color);
+  background: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
