@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link id="theme-style" rel="stylesheet" href="" />
     <link
       rel="stylesheet"
       media="screen and (max-width: 768px)"
@@ -26,9 +27,18 @@
   <body>
     <nav id="main-nav">
       <div class="container">
-        <div class="logo">
-          <img src="Clothing_Hats__Caps_Artboard_13-512.png" alt="" />
-          <h2>Brown Mafia 360</h2>
+        <div class="logo-section">
+          <div class="logo">
+            <img src="Clothing_Hats__Caps_Artboard_13-512.png" alt="" />
+            <h2>Brown Mafia 360</h2>
+          </div>
+          <div class="theme-div">
+            <p>Choose a Theme :</p>
+            <div data-mode="style" id="dark-mode" class="theme-dot"></div>
+            <div data-mode="red" id="red-mode" class="theme-dot"></div>
+            <div data-mode="green" id="green-mode" class="theme-dot"></div>
+            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+          </div>
         </div>
         <div class="social">
           <a target="_blank" href="https://facebook.com"
@@ -282,8 +292,8 @@
         </div>
         <div>
           <h2>Join Our Club</h2>
-            <p>What does a Muslim say to a Butcher on Qurbani Eid?</p>
-            <p>- Joe Biden</p>
+          <p>What does a Muslim say to a Butcher on Qurbani Eid?</p>
+          <p>- Joe Biden</p>
           <a href="#" class="btn btn-secondary">Join Now</a>
         </div>
         <div>
