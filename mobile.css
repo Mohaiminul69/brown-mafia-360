@@ -15,6 +15,10 @@
   align-items: center;
 }
 
+#main-nav .logo-section .theme-div p {
+  font-size: 0.75rem;
+}
+
 #main-nav .logo {
   justify-content: center;
   margin-right: 40px;
