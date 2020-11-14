@@ -11,6 +11,10 @@
   margin-bottom: 1.5rem;
 }
 
+.logo-section {
+  align-items: center;
+}
+
 #main-nav .logo {
   justify-content: center;
   margin-right: 40px;
@@ -109,7 +113,7 @@
   .page-container > *:first-child {
     grid-row: 1;
   }
-  
+
   #article .meta {
     flex-direction: column;
   }
@@ -117,6 +121,7 @@
   .l-heading {
     font-size: 2rem;
   }
+
   #main-footer .footer-container > *:last-child {
     font-size: 0.7rem;
   }
