@@ -12,7 +12,7 @@
   --dark-color: #333;
   --max-width: 1100px;
   --green-color: rgb(0, 107, 62);
-  --light-dark-color: #444;
+  --light-dark-color: #555;
   --social-color: rgb(165, 42, 42);
   --border-color: #c72727;
 }
@@ -300,7 +300,7 @@ body {
 
 .btn:hover {
   transition: 0.7s;
-  background: var(--primary-color);
+  background: var(--light-dark-color);
 }
 
 .container {
